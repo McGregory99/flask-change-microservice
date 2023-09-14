@@ -2,4 +2,4 @@ from app import change
 
 
 def test_change():
-    assert [{5: 'quarters'}, {1: 'nickels'}, {4: 'pennies'}] == change(1.34)
+    assert [{2: '50 centimos'}, {1: '20 centimos'}, {1: '10 centimos'}, {2: '2 centimos'}] == change(1.34)

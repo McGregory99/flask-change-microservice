@@ -5,8 +5,8 @@ app = Flask(__name__)
 def change(amount):
     # calculate the resultant change and store the result (res)
     res = []
-    coins = [1,5,10,25] # value of pennies, nickels, dimes, quarters
-    coin_lookup = {25: "quarters", 10: "dimes", 5: "nickels", 1: "pennies"}
+    coins = [1,2,5,10,20,50] # value of pennies, nickels, dimes, quarters
+    coin_lookup = {50: "50 centimos", 20: "20 centimos", 10: "10 centimos", 5: "5 centimos", 2: "2 centimos", 1:"1 centimo"}
 
     # divide the amount*100 (the amount in cents) by a coin value
     # record the number of coins that evenly divide and the remainder
